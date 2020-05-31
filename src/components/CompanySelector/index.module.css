@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+div.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  text-transform: capitalize;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.companyForm {
+  margin-top: 20px;
+}
