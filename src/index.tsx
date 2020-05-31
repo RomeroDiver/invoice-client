@@ -1,14 +1,21 @@
+import DateFnsUtils from '@date-io/date-fns';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { RecoilRoot } from 'recoil';
 import App from './App';
+import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+      <RecoilRoot>
+        <App />
+      </RecoilRoot>
+    </MuiPickersUtilsProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
